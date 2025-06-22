@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .div{
+        border: 1px solid;
+        margin: 50px auto;
+        width: 400px;
+        padding: 40px;
+        background-color: rgb(241, 241, 241);
+       }
+       .button{
+        width: 80px;
+        background-color: rgb(174, 174, 243);
+        border: none;
+        height: 20px;
+        box-shadow: 5px 5px 8px; color: #6b6be0;
+        color: black;
+        border-radius: 3px;
+       }
+       .count{
+        font-weight: 600;
+       }
+       h1{
+        display: inline;
+        margin: 100px 450px 100px 450px;
+       border: 5px solid black;
+       padding: 10px;
+       border-radius: 5px;
+       border-color: blueviolet;
+       color: rgb(136, 180, 94);
+       }
+       input{
+        width: 300px;
+        height: 20px;
+       }
+       ul li {
+    margin: 8px 0;
+}
+
+ul li button {
+    background-color: lightgray;
+    border: none;
+    padding: 2px 6px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+    </style>
+
+
+</head>
+<body> 
+    <br>
+    <h1>Editable To Do App</h1>
+    <div class="div">
+    <label for="todoapp"><b>Enter Your Task</b></label><br>
+    <input type="text" id="todoapp">
+
+    <button class="button" id="btn" onclick="addTask()">Add</button><br>
+    
+    <ul id="taskList"></ul>
+    <button class="button"  onclick="clearAll()">clear All</button>
+    <p class="count">Total Task: <span id="taskcount">0</span></p>
+    </div>
+    <script src="./java.js"></script>
+</body>
+</html>
